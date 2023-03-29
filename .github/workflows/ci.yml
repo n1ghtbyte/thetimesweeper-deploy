@@ -2,6 +2,7 @@ name: CI
 run-name: Hugo blog deploy
 on:
   push:
+    branches: ["main"]
 
 jobs:
   build:
