@@ -27,7 +27,7 @@ jobs:
         run: mkdir -p ~/.ssh
        
       - name: Scan the host key
-        run: ssh-keyscan -H $DEPLOY_SERVER >> ~/.ssh/known_hosts
+        run: ssh-keyscan -p 5000 -H $DEPLOY_SERVER >> ~/.ssh/known_hosts
         env:
           DEPLOY_SERVER: ${{ secrets.DEPLOY_SERVER }}
 
