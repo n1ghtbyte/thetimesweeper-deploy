@@ -12,13 +12,24 @@
 You can find here information about me, plus some thoughts of mine, including articles and write-ups.
 This website is built with emacs ~org-mode~, ~ox-hugo~ and ~hugo~.
 All the content in this website is generated from a single file.
-* About
+
+* About me
 :PROPERTIES:
 :EXPORT_HUGO_SECTION: 
 :EXPORT_HUGO_MENU: :menu "main"
 :EXPORT_FILE_NAME: about
 :END:
-Building this site.
++ Name: Tomás Carvalho;
++ Based: Lisbon;
++ Occupation(Main): Studying Computer Science Engineering at [[https://tecnico.ulisboa.pt/en/][IST]];
++ Email: [[mailto:tomas@thetimesweeper.com][tomas@thetimesweeper.com]] (check the [[https://thetimesweeper.com/contact/][contact page]] for further information).
+I enjoy to study mathematics, in particular cryptography and abstract
+algebra, also I'm a member of [[https://ctftime.org/team/34619][STT]].
+
+** thetimesweeper.com
+The domain of this website is inspired in one of my favourite
+videogames, /Blinx: The Time Sweeper/ (as well as my logo).
+
 * Contact
 :PROPERTIES:
 :EXPORT_HUGO_SECTION: 
