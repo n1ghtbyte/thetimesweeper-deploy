@@ -36,8 +36,48 @@ videogames, /Blinx: The Time Sweeper/ (as well as my logo).
 :EXPORT_FILE_NAME: contact
 :EXPORT_HUGO_MENU: :menu "main"
 :END:
-Find me on IRC on #gentoo or #emacs.
-Email: tomas at thisdomain dot com
++ Email: [[mailto:tomas@thetimesweeper.com][tomas@thetimesweeper.com]]
+Feel free to send me an email. I usually reply within 48h. If you think you have not received a response after a reasonable amount of time, check your “spam” folder.
+I do not social media.
+
+* Projects
+:PROPERTIES:
+:EXPORT_HUGO_SECTION: 
+:EXPORT_FILE_NAME: projects
+:EXPORT_HUGO_MENU: :menu "main"
+:END:
+** Assessments App [2021-now]
+I am currently working on a research project by ERSAMUS+, trying to
+understand how can technology affect the life of both students,
+parents and teacher in the classroom context. Furthermore, I am
+developing an application, the main features alongside the 3 different
+interfaces (Student, Parent and Teacher) are:
++ Create multiple classes (as a Teacher);
++ Student/Parent integration with a Teacher, within a specific class;
++ Generate Formative and Summative assessments;
++ Assess students (as a Teacher);
++ A list of default competences;
++ Create new competences (as a Teacher);
++ View the progress of each student /per/ competence and /per/
+  indicator.
+The app is still clossed source as agreed with the project manager,
+but it the repository will be made public eventually (licensed with GPLv3).
+
+** AstroPi [2018/2019]
+The European Astro Pi Challenge is an ESA Education project run in
+collaboration with the Raspberry Pi Foundation,it consists in
+conducting a scientific experiment in space. Me and my friends
+participated in the /Mission Space Lab/ category, we intended to
+demonstrate the validity of /Galileo's Theory of Relativity/, from an
+experimental point of view, using the RaspberryPi. Using a mathematical model deducted, we used the photographs of
+the Earth among with their coordinates to calculate the relative velocity
+and prove the importance of the Galileo's Theory of Relativity in
+experiments with this type of systems. As a secondary mission, we used
+the Humidity, Pressure and Temperature sensors to turn the RaspberryPi
+into a Human-Presence detector.
+
+All the code, images and final report can be found [[https://github.com/n1ghtbyte/Astro-Pi][here]].
+
 * Articles
 :PROPERTIES:
 :EXPORT_HUGO_SECTION: articles
