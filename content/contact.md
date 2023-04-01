@@ -7,5 +7,7 @@ draft = false
     identifier = "contact"
 +++
 
-Find me on IRC on #gentoo or #emacs.
-Email: tomas at thisdomain dot com
+-   Email: [tomas@thetimesweeper.com](mailto:tomas@thetimesweeper.com)
+
+Feel free to send me an email. I usually reply within 48h. If you think you have not received a response after a reasonable amount of time, check your “spam” folder.
+I do not social media.
