@@ -2,14 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://thetimesweeper.com/about/</loc>
+    <loc>https://thetimesweeper.com/about/</loc>
   </url><url>
-    <loc>http://thetimesweeper.com/articles/</loc>
+    <loc>https://thetimesweeper.com/articles/</loc>
   </url><url>
-    <loc>http://thetimesweeper.com/contact/</loc>
+    <loc>https://thetimesweeper.com/contact/</loc>
   </url><url>
-    <loc>http://thetimesweeper.com/</loc>
+    <loc>https://thetimesweeper.com/</loc>
   </url><url>
-    <loc>http://thetimesweeper.com/projects/</loc>
+    <loc>https://thetimesweeper.com/projects/</loc>
   </url>
 </urlset>

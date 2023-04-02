@@ -1,2 +1,2 @@
 User-Agent: *
-Sitemap: http://thetimesweeper.com/sitemap.xml
+Sitemap: https://thetimesweeper.com/sitemap.xml

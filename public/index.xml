@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on The Time Sweeper</title>
-    <link>http://thetimesweeper.com/</link>
+    <link>https://thetimesweeper.com/</link>
     <description>Recent content in Home on The Time Sweeper</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <copyright>Copyright © 2023, Tomás Carvalho</copyright><atom:link href="http://thetimesweeper.com/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright © 2023, Tomás Carvalho</copyright><atom:link href="https://thetimesweeper.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About me</title>
-      <link>http://thetimesweeper.com/about/</link>
+      <link>https://thetimesweeper.com/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://thetimesweeper.com/about/</guid>
+      <guid>https://thetimesweeper.com/about/</guid>
       <description>Name: Tomás Carvalho; Based: Lisbon; Occupation(Main): Studying Computer Science Engineering at IST; Email: tomas@thetimesweeper.com (check the contact page for further information). I enjoy to study mathematics, in particular cryptography and abstract algebra, also I&amp;rsquo;m a member of STT.
 thetimesweeper.com The domain of this website is inspired in one of my favourite videogames, Blinx: The Time Sweeper (as well as my logo).
 License All original code, as well as any inline documentation, is available under the terms of the GNU General Public License Version 3.</description>
@@ -20,19 +20,19 @@ License All original code, as well as any inline documentation, is available und
     
     <item>
       <title>Contact</title>
-      <link>http://thetimesweeper.com/contact/</link>
+      <link>https://thetimesweeper.com/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://thetimesweeper.com/contact/</guid>
+      <guid>https://thetimesweeper.com/contact/</guid>
       <description>Email: tomas@thetimesweeper.com Feel free to send me an email. I usually reply within 48h. If you think you have not received a response after a reasonable amount of time, check your “spam” folder. I do not social media.</description>
     </item>
     
     <item>
       <title>Projects</title>
-      <link>http://thetimesweeper.com/projects/</link>
+      <link>https://thetimesweeper.com/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://thetimesweeper.com/projects/</guid>
+      <guid>https://thetimesweeper.com/projects/</guid>
       <description>Assessments App [2021-now] I am currently working on a research project by ERSAMUS+, trying to understand how can technology affect the life of both students, parents and teacher in the classroom context. Furthermore, I am developing an application, the main features alongside the 3 different interfaces (Student, Parent and Teacher) are:
 Create multiple classes (as a Teacher); Student/Parent integration with a Teacher, within a specific class; Generate Formative and Summative assessments; Assess students (as a Teacher); A list of default competences; Create new competences (as a Teacher); View the progress of each student per competence and per indicator.</description>
     </item>
