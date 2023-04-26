@@ -29,3 +29,8 @@ under the terms of the [GNU General Public License Version 3](https://www.gnu.or
 
 All original text, such as articles and blog posts, is available under
 the [Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/legalcode).
+
+
+## Also on {#also-on}
+
+-   [GitHub](https://github.com/n1ghtbyte)
