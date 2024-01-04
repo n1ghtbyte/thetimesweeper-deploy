@@ -66,21 +66,22 @@ I do not use social media.
 
 ** Assessments App [2021-now]
 
-I am currently working on a research project by ERSAMUS+, trying to
+I am currently working on a research project by ERASMUS+, trying to
 understand how can technology affect the life of both students,
 parents and teacher in the classroom context. Furthermore, I am
 developing an application, the main features alongside the 3 different
 interfaces (Student, Parent and Teacher) are:
 + Create multiple classes (as a Teacher);
 + Student/Parent integration with a Teacher, within a specific class;
-+ Generate Formative and Summative assessments;
++ Generate Formative and Summative assessments, both for the class or for each student individually;
 + Assess students (as a Teacher);
 + A list of default competences;
 + Create new competences (as a Teacher);
 + View the progress of each student /per/ competence and /per/
-  indicator.
-The app is still clossed source as agreed with the project manager,
-but it the repository will be made public eventually (licensed with GPLv3).
+  indicator, as a Teacher and as a Parent.
++ View the overall progression of the class.
+
+The source code is available [[https://github.com/n1ghtbyte/Assessments-App][here]], to install the app on an Android device, download the [[https://github.com/n1ghtbyte/Assessments-App/releases][release for android]].
 
 ** AstroPi [2018/2019]
 

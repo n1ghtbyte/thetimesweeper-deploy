@@ -9,7 +9,7 @@ draft = false
 
 ## Assessments App [2021-now] {#assessments-app-2021-now}
 
-I am currently working on a research project by ERSAMUS+, trying to
+I am currently working on a research project by ERASMUS+, trying to
 understand how can technology affect the life of both students,
 parents and teacher in the classroom context. Furthermore, I am
 developing an application, the main features alongside the 3 different
@@ -17,15 +17,16 @@ interfaces (Student, Parent and Teacher) are:
 
 -   Create multiple classes (as a Teacher);
 -   Student/Parent integration with a Teacher, within a specific class;
--   Generate Formative and Summative assessments;
+-   Generate Formative and Summative assessments, both for the class or for each student individually;
 -   Assess students (as a Teacher);
 -   A list of default competences;
 -   Create new competences (as a Teacher);
 -   View the progress of each student _per_ competence and _per_
-    indicator.
+    indicator, as a Teacher and as a Parent.
+-   View the overall progression of the class.
 
-The app is still clossed source as agreed with the project manager,
-but it the repository will be made public eventually (licensed with GPLv3).
+The source code is available [here](https://github.com/n1ghtbyte/Assessments-App).
+To experiment the app download the [release for android](https://github.com/n1ghtbyte/Assessments-App/releases).
 
 
 ## AstroPi <code>[2018/2019]</code> {#astropi}
