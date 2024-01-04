@@ -6,7 +6,7 @@ theme = 'hugo-bearblog'
 # Basic metadata configuration for your blog.
 title = 'The Time Sweeper'
 author = "Tomás Carvalho"
-copyright = "Copyright © 2024, Tomás Carvalho"
+copyright = "Copyright © 2023-2024, Tomás Carvalho"
 languageCode = "en-US"
 
 # Generate a nice robots.txt for SEO
