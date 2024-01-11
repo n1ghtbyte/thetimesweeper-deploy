@@ -7,13 +7,12 @@
 :EXPORT_HUGO_SECTION: 
 :EXPORT_FILE_NAME: _index
 :END:
+
 [[../static/images/n1ght.png]]
 
-You can find here information about me, plus some thoughts of mine, including articles and write-ups.
-This website is built with emacs ~org-mode~, ~ox-hugo~ and ~hugo~.
-All the content in this website is generated from a single file.
+This is my personal webpage, where you can explore some of my thoughts on a variety of matters.
 
-* About me
+* About
 :PROPERTIES:
 :EXPORT_HUGO_SECTION: 
 :EXPORT_HUGO_MENU: :menu "main"
@@ -23,18 +22,18 @@ All the content in this website is generated from a single file.
 + Name: Tomás Carvalho;
 + Based: Lisbon;
 + Occupation(Main): Studying Computer Science Engineering at [[https://tecnico.ulisboa.pt/en/][IST]];
-+ Email: [[mailto:tomas@thetimesweeper.com][tomas@thetimesweeper.com]] (check the [[https://thetimesweeper.com/contact/][contact page]] for further information).
 
 I enjoy to study mathematics, in particular cryptography and abstract
-algebra, also I'm a member of [[https://ctftime.org/team/34619][STT]].
+algebra. 
 
 ** thetimesweeper.com
 
 The domain of this website is inspired in one of my favourite
 videogames, /Blinx: The Time Sweeper/ (as well as my logo).
 
+This website is built with emacs ~org-mode~, ~ox-hugo~ and ~hugo~.
 
-*** License 
+*** License
 
 All original code, as well as any inline documentation, is available
 under the terms of the [[https://www.gnu.org/licenses/gpl-3.0.html][GNU General Public License Version 3]].
@@ -45,7 +44,8 @@ the [[https://creativecommons.org/licenses/by-sa/4.0/legalcode][Creative Commons
 ** Also on
 
 + [[https://github.com/n1ghtbyte][GitHub]]
-
++ Libera.chat
+  
 * Contact
 :PROPERTIES:
 :EXPORT_HUGO_SECTION: 
@@ -53,7 +53,7 @@ the [[https://creativecommons.org/licenses/by-sa/4.0/legalcode][Creative Commons
 :EXPORT_HUGO_MENU: :menu "main"
 :END:
 
-+ Email: [[mailto:tomas@thetimesweeper.com][tomas@thetimesweeper.com]]
++ Email: tomas [at] this domain name [dot] com
 Feel free to send me an email. I usually reply within 48h. If you think you have not received a response after a reasonable amount of time, check your “spam” folder.
 I do not use social media.
 
@@ -98,14 +98,3 @@ the Humidity, Pressure and Temperature sensors to turn the RaspberryPi
 into a Human-Presence detector.
 
 All the code, images and final report can be found [[https://github.com/n1ghtbyte/Astro-Pi][here]].
-
-* Articles
-:PROPERTIES:
-:EXPORT_HUGO_SECTION: articles
-:END:
-
-** articles
-:PROPERTIES:
-:EXPORT_FILE_NAME: _index
-:END:
-If this is fish, I'll be a monkey's uncle.

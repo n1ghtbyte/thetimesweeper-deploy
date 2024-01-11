@@ -25,8 +25,7 @@ interfaces (Student, Parent and Teacher) are:
     indicator, as a Teacher and as a Parent.
 -   View the overall progression of the class.
 
-The source code is available [here](https://github.com/n1ghtbyte/Assessments-App).
-To experiment the app download the [release for android](https://github.com/n1ghtbyte/Assessments-App/releases).
+The source code is available [here](https://github.com/n1ghtbyte/Assessments-App), to install the app on an Android device, download the [release for android](https://github.com/n1ghtbyte/Assessments-App/releases).
 
 
 ## AstroPi <code>[2018/2019]</code> {#astropi}

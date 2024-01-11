@@ -7,7 +7,7 @@ draft = false
     identifier = "contact"
 +++
 
--   Email: [tomas@thetimesweeper.com](mailto:tomas@thetimesweeper.com)
+-   Email: tomas [at] this domain name [dot] com
 
 Feel free to send me an email. I usually reply within 48h. If you think you have not received a response after a reasonable amount of time, check your “spam” folder.
 I do not use social media.
