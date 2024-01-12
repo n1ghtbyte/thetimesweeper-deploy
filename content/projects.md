@@ -31,7 +31,7 @@ The source code is available [here](https://github.com/n1ghtbyte/Assessments-App
 ## AstroPi <code>[2018/2019]</code> {#astropi}
 
 The European Astro Pi Challenge is an ESA Education project run in
-collaboration with the Raspberry Pi Foundation,it consists in
+collaboration with the Raspberry Pi Foundation, it consists in
 conducting a scientific experiment in space. Me and my friends
 participated in the _Mission Space Lab_ category, we intended to
 demonstrate the validity of _Galileo's Theory of Relativity_, from an

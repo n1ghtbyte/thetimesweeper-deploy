@@ -1,0 +1,257 @@
+#+hugo_base_dir: ../
+#+startup: indent
+
+* Home
+:PROPERTIES:
+:EXPORT_HUGO_EXCLUDE_FRONT_MATTER: t
+:EXPORT_HUGO_SECTION: 
+:EXPORT_FILE_NAME: _index
+:END:
+
+[[../static/images/n1ght.png]]
+
+This is my personal webpage, where you can explore some of my thoughts on a variety of matters.
+
+* About
+:PROPERTIES:
+:EXPORT_HUGO_SECTION: 
+:EXPORT_HUGO_MENU: :menu "main"
+:EXPORT_FILE_NAME: about
+:END:
+
++ Name: Tomás Carvalho;
++ Based: Lisbon;
++ Occupation(Main): Studying Computer Science Engineering at [[https://tecnico.ulisboa.pt/en/][IST]];
+
+I enjoy to study mathematics, in particular cryptography and abstract
+algebra. 
+
+** thetimesweeper.com
+
+The domain of this website is inspired in one of my favourite
+videogames, /Blinx: The Time Sweeper/ (as well as my logo).
+
+This website is built with emacs ~org-mode~, ~ox-hugo~ and ~hugo~.
+
+*** License
+
+All original code, as well as any inline documentation, is available
+under the terms of the [[https://www.gnu.org/licenses/gpl-3.0.html][GNU General Public License Version 3]].
+
+All original text, such as articles and blog posts, is available under
+the [[https://creativecommons.org/licenses/by-sa/4.0/legalcode][Creative Commons Attribution-ShareAlike 4.0 International]].
+
+** Also on
+
++ [[https://github.com/n1ghtbyte][GitHub]]
++ Libera.chat
+  
+* Contact
+:PROPERTIES:
+:EXPORT_HUGO_SECTION: 
+:EXPORT_FILE_NAME: contact
+:EXPORT_HUGO_MENU: :menu "main"
+:END:
+
++ Email: tomas [at] this domain name [dot] com
+Feel free to send me an email. I usually reply within 48h. If you think you have not received a response after a reasonable amount of time, check your “spam” folder.
+I do not use social media.
+
+* Projects
+:PROPERTIES:
+:EXPORT_HUGO_SECTION: 
+:EXPORT_FILE_NAME: projects
+:EXPORT_HUGO_MENU: :menu "main"
+:END:
+
+** Assessments App [2021-now]
+
+I am currently working on a research project by ERASMUS+, trying to
+understand how can technology affect the life of both students,
+parents and teacher in the classroom context. Furthermore, I am
+developing an application, the main features alongside the 3 different
+interfaces (Student, Parent and Teacher) are:
++ Create multiple classes (as a Teacher);
++ Student/Parent integration with a Teacher, within a specific class;
++ Generate Formative and Summative assessments, both for the class or for each student individually;
++ Assess students (as a Teacher);
++ A list of default competences;
++ Create new competences (as a Teacher);
++ View the progress of each student /per/ competence and /per/
+  indicator, as a Teacher and as a Parent.
++ View the overall progression of the class.
+
+The source code is available [[https://github.com/n1ghtbyte/Assessments-App][here]], to install the app on an Android device, download the [[https://github.com/n1ghtbyte/Assessments-App/releases][release for android]].
+
+** AstroPi [2018/2019]
+
+The European Astro Pi Challenge is an ESA Education project run in
+collaboration with the Raspberry Pi Foundation, it consists in
+conducting a scientific experiment in space. Me and my friends
+participated in the /Mission Space Lab/ category, we intended to
+demonstrate the validity of /Galileo's Theory of Relativity/, from an
+experimental point of view, using the RaspberryPi. Using a mathematical model deducted, we used the photographs of
+the Earth among with their coordinates to calculate the relative velocity
+and prove the importance of the Galileo's Theory of Relativity in
+experiments with this type of systems. As a secondary mission, we used
+the Humidity, Pressure and Temperature sensors to turn the RaspberryPi
+into a Human-Presence detector.
+
+All the code, images and final report can be found [[https://github.com/n1ghtbyte/Astro-Pi][here]].
+
+* All the posts
+:PROPERTIES:
+:EXPORT_HUGO_SECTION: writings
+:END:
+** Writings
+:PROPERTIES:
+:EXPORT_HUGO_MENU: :menu "main"
+:EXPORT_FILE_NAME: _index
+:END:
+
+The writings start down there
+** Polynomials over Zp                                                :math:
+:PROPERTIES:
+:EXPORT_FILE_NAME: Polynomials over Zp
+:EXPORT_DATE: 2024-01-12
+:END:
+*** Abstract
+
+There are known processes to define some blackbox polynomials, such
+as Newtons' or Lagrange's Interpolation methods, but these are require
+a large set of points, and are only meant to approximate the
+polynomial. This article proposes an algorithm to do a similar task with
+only one point, through a test oracle, within the degree of the
+poynomial iterations.
+*** Introduction
+
+A polynomial is an object that resides inside an abelian group (whose
+direct operation is addition), more precisely a commutative
+ring. In general, univariate polynomial expressions can be written as:
+
+\begin{equation}
+\label{eq:1}
+P(x) = a_n x^n + a_{n-1} x^{n-1} + \cdots + a_0, \quad a_n \in \mathbb{Z}, \quad n \in \mathbb{N}
+\end{equation}
+
+or:
+
+\begin{equation}
+P(x) = \sum_{k=0}^{n} a_k x^k, \quad a_k \in \mathbb{Z}, \quad n \in \mathbb{N}
+\end{equation}
+
+The method presented, works when one has the possibility to guess
+parameters such as:
++ The degree;
++ The maximum coefficient of the polynomial.
+
+Note that if one may ask the blackbox for a large prime number, $\log_{q}
+P(q) \approx \deg P$ is a good guess for the degree of the polynomial.
+
+*** Method
+
+This algorithm is designed to find all the coefficients of a given
+polynomial over a ring $Z_p[x]$, where the coefficients are positive integers,
+(it is also possible to execute a variation when the coeffiecients can
+be negative integers). The algorithm needs as input exacly one point,
+ie. $(x,P(x))$. The output is a list of the coefficients of the given
+polynomial, with the size of the estimation of the degree. 
+
+Sets of the algorithm:
+1. Let $poly_deg$ be the guessed degree of the polynomial, $max$
+   the maximum element of the coefficient set, $(p,q)$ the pair
+   $(x,P(x))$, and L an empty list;
+2. Generate a prime bigger than $max$;
+3. From i=0 to $max$;
+   1. $tmp = q \mod p$;
+   2. Append to $L$ the value $tmp$;
+   3. $tmp = (tmp - L[i]) \mod p$
+4. Print $P(x) = L[0] + L[1]x + \cdots + L[max]x^{max}$;
+5. Halt.
+   
+**** Complexity
+
+For a polynomial where the coefficients are positive or null integers,
+it takes $\mathcal{O}(max)$ where $max \approx \deg P(x)$ iterations. However,
+if there might be negative coefficients, then the algorithm needs to
+assume that the value computed in that _iteration_ might be wrong,
+ie. save both the value of $temp$, compute again $tmp = p-tmp$ and
+save $tmp$ in another list that has all the coefficients until now
+computed. This nondeterministic approach would make this algorithm
+belong to *NEXPTIME* and *NEXPSPACE*. Still, note that in practice one
+might assume somethings about blackbox polynomials, and this
+complexity be reduced to a smaller class (both in time and space). If
+there is the possibility to have two points from the polynomial, its
+possible to verify if the coefficient is indeed positive or negative,
+removing the need for saving all the possibilities and checking at the
+end which branch returned, thus having the same complexity as the
+method proposed above, downgrading the time and space complexity.
+
+**** Example
+
+Given a polynomial $P(x)$, for example $P(x) = 7 x^3 + 4 x^2 + 2 x +
+8$, ask for a random prime point, for example $x = 11$, we have:
+
+
+\begin{equation}
+$P(11) = 7 (11)^3 + 4 (11)^{2} + 2 (11) + 8 = 9381$
+\end{equation}
+
+#+begin_src sage :session foo :exports none
+  P = 7*x^3 + 4*x^2 + 2*x + 8
+  P(x=11)
+#+end_src
+
+#+RESULTS:
+: 9831
+
+We want to extract the coefficients with this point, $P(11) \equiv 7 (11)^3 + 4 (11)^{2} + 2 (11) + 8 \pmod{11}$. Since $P(11)=9831$ is a the sum of multiples of $11$, then:
+$P(11) \equiv 8 \pmod{11}$. We found $a_{0}=8$, let's find $a_{1}$:
+
+\begin{align*}
+P(11) - a_{0} & = 9831 - 8 = 9823 \\
+P(11) - 8 & = 7 (11)^3 + 4 (11)^{2} + 2 (11) + 8 - 8 \\
+P(11) - 8 & = 11( 7 (11)^2 + 4 (11) + 2) \\
+\end{align*}
+
+Note that $P(11) - 8 \equiv 0 \pmod{11}$
+
+\begin{align*}
+\frac{P(11) - 8}{11} &\equiv \frac{11(7(11)^2 + 4(11) + 2)}{11} \pmod{11} \\
+                     &\equiv 7(11)^2 + 4(11) + 2 \pmod{11} \\
+                     &\equiv 2 \pmod{11} \\
+\end{align*}
+
+Found $a_{1}=2$, let's find $a_{2}$:
+
+\begin{align*}
+\frac{P(11) - 8}{11} - 2 &\equiv 7(11)^2 + 4(11) + 2 - 2 \pmod{11} \\
+\frac{P(11) - 8}{11} - 2 &\equiv 7(11)^2 + 4(11) \pmod{11} \\
+                         &\equiv \frac{7(11)^2 + 4(11)}{11} \pmod{11} \\
+                         &\equiv \frac{11(7(11) + 4)}{11} \pmod{11} \\
+                         &\equiv 7(11) + 4 \pmod{11} \\
+                         &\equiv 4 \pmod{11} \\
+\end{align*}
+
+Found $a_2=4$, we just need one more iteration:
+
+\begin{align*}
+\frac{\frac{P(11) - 8}{11} - 2}{11} - 4 &\equiv 7(11) + 4 - 4 \pmod{11} \\
+\frac{\frac{P(11) - 8}{11} - 2}{11} - 4 &\equiv 7(11) \pmod{11} \\
+\frac{\frac{\frac{P(11) - 8}{11} - 2}{11} - 4}{11} &\equiv \frac{7(11)}{11} \pmod{11} \\
+                                                   &\equiv 7 \pmod{11} \\
+\end{align*}
+
+At last, found $a_{3}=7$. We defined the whole polynomyal with only
+one point. Nevertheless, why did we ask for the $P(11)$? Since we knew
+in advance that $a_{3},a_{2}, a_{1} \text{ and } a_{0} \in
+\mathbb{Z}[8]$, a /good guess/ for $x$, would be the first following
+prime number after the maximum element of the set of coefficients (in
+this case it is $8$), to get the best optimization regarding space and
+time. 
+
+*** Conclusion
+The method presented offers a potential approach for attacking 
+polynomials, assuming that certain parameters, such as the degree and
+maximum coefficient, can be guessed accurately. However, the accuracy of the initial
+guesses remain crucial for the success of the attack.
