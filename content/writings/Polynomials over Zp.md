@@ -39,7 +39,7 @@ parameters such as:
 -   The maximum coefficient of the polynomial.
 
 Note that if one may ask the blackbox for a large prime number, \\(\log\_{q}
-P(q) \approx \deg P\\) is a good guess for the degree of the polynomial.
+P(q) + 1 \approx \deg P\\) is a good guess for the degree of the polynomial.
 
 
 ## Method {#method}
@@ -53,22 +53,22 @@ polynomial, with the size of the estimation of the degree.
 
 Sets of the algorithm:
 
-1.  Let \\(poly\_deg\\) be the guessed degree of the polynomial, \\(max\\)
-    the maximum element of the coefficient set, \\((p,q)\\) the pair
+1.  Let \\(deg\\) be the guessed degree of the polynomial, \\((p,q)\\) the pair
     \\((x,P(x))\\), and L an empty list;
 2.  Generate a prime bigger than \\(max\\);
-3.  From i=0 to \\(max\\);
+3.  From \\(i=0\\) to \\(deg\\);
     1.  \\(tmp = q \mod p\\);
     2.  Append to \\(L\\) the value \\(tmp\\);
-    3.  \\(tmp = (tmp - L[i]) \mod p\\)
-4.  Print \\(P(x) = L[0] + L[1]x + \cdots + L[max]x^{max}\\);
+    3.  \\(tmp = tmp // p\\);
+    4.  \\(i = i + 1\\);
+4.  Return \\(P(x) = L[0] + L[1]x + \cdots + L[deg]x^{deg}\\);
 5.  Halt.
 
 
 ### Complexity {#complexity}
 
 For a polynomial where the coefficients are positive or null integers,
-it takes \\(\mathcal{O}(max)\\) where \\(max \approx \deg P(x)\\) iterations. However,
+it takes \\(\mathcal{O}(deg)\\) where \\(deg \approx \deg P(x)\\) iterations. However,
 if there might be negative coefficients, then the algorithm needs to
 assume that the value computed in that <span class="underline">iteration</span> might be wrong,
 ie. save both the value of \\(temp\\), compute again \\(tmp = p-tmp\\) and
