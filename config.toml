@@ -5,7 +5,14 @@ copyright = "Copyright © 2023-2034"
 languageCode = "en"
 
 [params]
-  description = "Beyond Good and Evil"
   favicon = "images/favicon.png"
   images = ["images/share.png"]
   title = "The Time Sweeper"
+
+disableKinds = ["taxonomy"]
+ignoreErrors = ["error-disable-taxonomy"]
+
+
+[permalinks]
+  writings = "/:slug/"
+  tags = "/writings/:slug"
