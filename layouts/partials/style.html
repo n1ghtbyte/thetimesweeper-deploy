@@ -3,6 +3,7 @@
 	@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&display=swap');
 
 	body {
+		font-size: 14px;
 		background-color: #3b4252;
 		color: #d8dee9;
 		font-family: 'IBM Plex Sans', 'Helvetica Neue';
@@ -12,7 +13,7 @@
 		text-align: left;
 		word-wrap: break-word;
 		overflow-wrap: break-word;
-		line-height: 2;
+		line-height: 1.44;
 	}
 
 	h1,
@@ -21,11 +22,11 @@
 	h4,
 	h5,
 	h6,
-	strong,
+	strong,	
 	b {
 		color: #eee;
 	}
-
+	
 	a {
 		color: #8cc2dd;
 	}
@@ -51,7 +52,6 @@
 		color: #ccc;
 	}
 
-	textarea,
 	input {
 		background-color: #252525;
 		color: #ddd;
@@ -71,7 +71,7 @@
 	}
 
 	nav a {
-		margin-right: 10px;
+		margin-right: 7px;
 	}
 
 	content {
@@ -83,7 +83,8 @@
 	}
 
 	img {
-		max-width: 80%;
+		height: auto;
+		max-width: 100%;
 	}
 
 	div.highlight pre {
@@ -104,6 +105,7 @@
 	}
 
 	footer {
+		font-size: 10px;
 		padding: 30px;
 		text-align: center;
 	}
@@ -134,21 +136,5 @@
 
 	ul.blog-posts li a:visited {
 		color: #8b6fcb;
-	}
-
-	@media (prefers-color-scheme: dark) {
-		body {
-			background-color: #3b4252;
-			color: #d8dee9;
-		}
-
-		h1,
-		h2,
-		h3,
-		h4,
-		h5,
-		h6,
-		strong,
-
 	}
 </style>
