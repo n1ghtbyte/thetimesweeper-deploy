@@ -1,167 +1,154 @@
 <style>
-  /* Import IBM Plex font from Google Fonts API */
-  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&display=swap');
+	/* Import IBM Plex font from Google Fonts API */
+	@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&display=swap');
 
-  body {
-    font-family: 'IBM Plex Sans',  'Helvetica Neue';
-    margin: auto;
-    padding: 30px;
-    max-width: 620px;
-    text-align: left;
-    background-color: #222;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    line-height: 2;
-    color: #555;
-  }
+	body {
+		background-color: #3b4252;
+		color: #d8dee9;
+		font-family: 'IBM Plex Sans', 'Helvetica Neue';
+		margin: auto;
+		padding: 30px;
+		max-width: 620px;
+		text-align: left;
+		word-wrap: break-word;
+		overflow-wrap: break-word;
+		line-height: 2;
+	}
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  strong,
-  b {
-    color: #222;
-  }
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	strong,
+	b {
+		color: #eee;
+	}
 
-  a {
-    color: #3273dc;
-    /*color: #ff5e6c;*/
-  }
+	a {
+		color: #8cc2dd;
+	}
 
-  .title {
-    text-decoration: none;
-    border: 0;
-  }
+	code {
+		background-color: #777;
+		padding: 2px 5px;
+	}
 
-  .title span {
-    font-weight: 400;
-  }
+	pre code {
+		color: #ddd;
+		display: block;
+		padding: 20px;
+		white-space: pre-wrap;
+		font-size: 14px;
+		overflow-x: auto;
+	}
 
-  nav a {
-    margin-right: 10px;
-  }
 
-  content {
-    line-height: 1.5;
-  }
+	pre code {}
 
-  table {
-    width: 100%;
-  }
+	blockquote {
+		color: #ccc;
+	}
 
-  img {
-    max-width: 80%;
-  }
+	textarea,
+	input {
+		background-color: #252525;
+		color: #ddd;
+	}
 
-  code {
-    padding: 2px 5px;
-    background-color: #f2f2f2;
-  }
+	.helptext {
+		color: #aaa;
+	}
 
-  pre code {
-    color: #222;
-    display: block;
-    padding: 20px;
-    white-space: pre-wrap;
-    font-size: 14px;
-    overflow-x: auto;
-  }
+	.title {
+		text-decoration: none;
+		border: 0;
+	}
 
-  div.highlight pre {
-    background-color: initial;
-    color: initial;
-  }
+	.title span {
+		font-weight: 400;
+	}
 
-  div.highlight code {
-    background-color: unset;
-    color: unset;
-  }
+	nav a {
+		margin-right: 10px;
+	}
 
-  blockquote {
-    border-left: 1px solid #999;
-    color: #222;
-    padding-left: 20px;
-    font-style: italic;
-  }
+	content {
+		line-height: 1.5;
+	}
 
-  footer {
-    padding: 30px;
-    text-align: center;
-  }
+	table {
+		width: 100%;
+	}
 
-  .helptext {
-    color: #777;
-    font-size: small;
-  }
+	img {
+		max-width: 80%;
+	}
 
-  .errorlist {
-    color: #eba613;
-    font-size: small;
-  }
+	div.highlight pre {
+		background-color: initial;
+		color: initial;
+	}
 
-  /* blog posts */
-  ul.blog-posts {
-    list-style-type: none;
-    padding: unset;
-  }
+	div.highlight code {
+		background-color: unset;
+		color: unset;
+	}
 
-  ul.blog-posts li {
-    display: flex;
-  }
+	blockquote {
+		border-left: 1px solid #999;
+		color: #222;
+		padding-left: 20px;
+		font-style: italic;
+	}
 
-  ul.blog-posts li span {
-    flex: 0 0 130px;
-  }
+	footer {
+		padding: 30px;
+		text-align: center;
+	}
 
-  ul.blog-posts li a:visited {
-    color: #8b6fcb;
-  }
+	.helptext {
+		color: #777;
+		font-size: small;
+	}
 
-  @media (prefers-color-scheme: dark) {
-    body {
-      background-color: #3b4252;
-      color: #d8dee9;
-    }
+	.errorlist {
+		color: #eba613;
+		font-size: small;
+	}
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    strong,
-    b {
-      color: #eee;
-    }
+	/* blog posts */
+	ul.blog-posts {
+		list-style-type: none;
+		padding: unset;
+	}
 
-    a {
-      color: #8cc2dd;
-    }
+	ul.blog-posts li {
+		display: flex;
+	}
 
-    code {
-      background-color: #777;
-    }
+	ul.blog-posts li span {
+		flex: 0 0 130px;
+	}
 
-    pre code {
-      color: #ddd;
-    }
+	ul.blog-posts li a:visited {
+		color: #8b6fcb;
+	}
 
-    blockquote {
-      color: #ccc;
-    }
+	@media (prefers-color-scheme: dark) {
+		body {
+			background-color: #3b4252;
+			color: #d8dee9;
+		}
 
-    textarea,
-    input {
-      background-color: #252525;
-      color: #ddd;
-    }
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		strong,
 
-    .helptext {
-      color: #aaa;
-    }
-  }
-
+	}
 </style>
