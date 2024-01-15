@@ -90,7 +90,7 @@ Given a polynomial \\(P(x)\\), for example \\(P(x) = 7 x^3 + 4 x^2 + 2 x +
 8\\), ask for a random prime point, for example \\(x = 11\\), we have:
 
 \begin{equation}
-$P(11) = 7 (11)^3 + 4 (11)^{2} + 2 (11) + 8 = 9381$
+P(11) = 7 (11)^3 + 4 (11)^{2} + 2 (11) + 8 = 9381
 \end{equation}
 
 We want to extract the coefficients with this point, \\(P(11) \equiv 7 (11)^3 + 4 (11)^{2} + 2 (11) + 8 \pmod{11}\\). Since \\(P(11)=9831\\) is a the sum of multiples of \\(11\\), then:
@@ -99,7 +99,7 @@ We want to extract the coefficients with this point, \\(P(11) \equiv 7 (11)^3 + 
 \begin{align\*}
 P(11) - a\_{0} & = 9831 - 8 = 9823 \\\\
 P(11) - 8 & = 7 (11)^3 + 4 (11)^{2} + 2 (11) + 8 - 8 \\\\
-P(11) - 8 & = 11( 7 (11)^2 + 4 (11) + 2) \\\\
+            = 11( 7 (11)^2 + 4 (11) + 2) \\\\
 \end{align\*}
 
 Note that \\(P(11) - 8 \equiv 0 \pmod{11}\\)
@@ -114,7 +114,7 @@ Found \\(a\_{1}=2\\), let's find \\(a\_{2}\\):
 
 \begin{align\*}
 \frac{P(11) - 8}{11} - 2 &\equiv 7(11)^2 + 4(11) + 2 - 2 \pmod{11} \\\\
-\frac{P(11) - 8}{11} - 2 &\equiv 7(11)^2 + 4(11) \pmod{11} \\\\
+                         &\equiv 7(11)^2 + 4(11) \pmod{11} \\\\
                          &\equiv \frac{7(11)^2 + 4(11)}{11} \pmod{11} \\\\
                          &\equiv \frac{11(7(11) + 4)}{11} \pmod{11} \\\\
                          &\equiv 7(11) + 4 \pmod{11} \\\\
