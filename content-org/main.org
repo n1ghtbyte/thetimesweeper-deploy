@@ -64,7 +64,7 @@ I do not use social media.
 :EXPORT_HUGO_MENU: :menu "main"
 :END:
 
-** Assessments App [2021-now]
+** Assessments App [2021-2024]
 
 I am currently working on a research project by ERASMUS+, trying to
 understand how can technology affect the life of both students,
